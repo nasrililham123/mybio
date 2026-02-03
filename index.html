@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nasril Ilham | Gamer Bio</title>
+
+  <!-- Font Esports -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #1a1a2e, #0f0f1a);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      animation: float 8s infinite alternate ease-in-out;
+    }
+
+    body::before {
+      width: 400px;
+      height: 400px;
+      background: rgba(0, 212, 255, 0.4);
+      top: -120px;
+      left: -120px;
+    }
+
+    body::after {
+      width: 300px;
+      height: 300px;
+      background: rgba(0, 102, 255, 0.35);
+      bottom: -100px;
+      right: -100px;
+      animation-duration: 10s;
+    }
+
+    @keyframes float {
+      to {
+        transform: translate(60px, 60px);
+      }
+    }
+
+    .card {
+      background: rgba(20, 20, 40, 0.9);
+      padding: 32px;
+      width: 100%;
+      max-width: 380px;
+      border-radius: 22px;
+      text-align: center;
+      box-shadow: 0 0 30px rgba(0,212,255,.35);
+      border: 1px solid rgba(0,212,255,.3);
+      z-index: 1;
+    }
+
+    .card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00d4ff;
+      margin-bottom: 15px;
+      animation: pulse 2.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 15px #00d4ff; }
+      50% { box-shadow: 0 0 35px #00ffff; }
+      100% { box-shadow: 0 0 15px #00d4ff; }
+    }
+
+    h1 {
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    .role {
+      font-size: 13px;
+      color: #00d4ff;
+      margin: 10px 0 18px;
+    }
+
+    .desc {
+      font-size: 13px;
+      color: #e0e0e0;
+      margin-bottom: 22px;
+    }
+
+    .links a {
+      display: block;
+      margin: 12px 0;
+      padding: 14px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #00d4ff, #0066ff);
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: .3s;
+      box-shadow: 0 0 18px rgba(0,102,255,.6);
+    }
+
+    .links a i {
+      margin-right: 8px;
+    }
+
+    .links a:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 0 30px #00ffff;
+    }
+
+    footer {
+      margin-top: 16px;
+      font-size: 11px;
+      color: #aaa;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <img src="IMG_20260203_151105.jpg" alt="Nasril Ilham">
+    <h1>Nasril Ilham</h1>
+    <div class="role">Content Creator | Gamer</div>
+    <div class="desc">Welcome to my bio 👋 Thanks for support</div>
+
+    <div class="links">
+      <a href="https://www.youtube.com/@nasrililham56" target="_blank"><i class="fab fa-youtube"></i>YouTube</a>
+      <a href="https://www.tiktok.com/@nsril.56" target="_blank"><i class="fab fa-tiktok"></i>TikTok</a>
+      <a href="https://www.instagram.com/ns_rl06/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+      <a href="https://saweria.co/LoliBeatzNsrl" target="_blank"><i class="fas fa-hand-holding-dollar"></i>Saweria</a>
+    </div>
+
+    <footer>© 2026</footer>
+  </div>
+</body>
+</html>
