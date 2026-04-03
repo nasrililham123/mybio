@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nasril Ilham | Thank For Support</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #0f0f1a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    /* Partikel ringan */
+    body::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(white 1px, transparent 1px);
+      background-size: 40px 40px;
+      opacity: 0.05;
+      animation: moveBg 20s linear infinite;
+    }
+
+    @keyframes moveBg {
+      from { transform: translateY(0); }
+      to { transform: translateY(-40px); }
+    }
+
+    /* RGB border */
+    .card {
+      position: relative;
+      padding: 2px;
+      border-radius: 22px;
+      background: linear-gradient(270deg, red, orange, yellow, green, cyan, blue, violet, red);
+      background-size: 400%;
+      animation: rgbBorder 10s linear infinite;
+    }
+
+    @keyframes rgbBorder {
+      0% { background-position: 0% }
+      100% { background-position: 400% }
+    }
+
+    .inner {
+      background: rgba(20, 20, 40, 0.95);
+      border-radius: 20px;
+      padding: 28px;
+      width: 90vw;
+      max-width: 380px;
+      text-align: center;
+    }
+
+    img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00d4ff;
+      margin-bottom: 15px;
+      animation: pulse 2.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 10px #00d4ff; }
+      50% { box-shadow: 0 0 30px #00ffff; }
+      100% { box-shadow: 0 0 10px #00d4ff; }
+    }
+
+    h1 {
+      font-size: 22px;
+    }
+
+    .role {
+      font-size: 12px;
+      color: #00d4ff;
+      margin: 8px 0 15px;
+    }
+
+    .desc {
+      font-size: 12px;
+      color: #ccc;
+      margin-bottom: 18px;
+    }
+
+    .links a {
+      display: block;
+      margin: 10px 0;
+      padding: 12px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #00d4ff, #0066ff);
+      color: white;
+      text-decoration: none;
+      font-size: 13px;
+      transition: .3s;
+    }
+
+    .links a:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00ffff;
+    }
+
+    .links i {
+      margin-right: 8px;
+    }
+
+    footer {
+      margin-top: 12px;
+      font-size: 10px;
+      color: #aaa;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="inner">
+      <img src="profil.png">
+
+      <h1>Nasril Ilham</h1>
+      <div class="role">Content Creator | Gamer</div>
+      <div class="desc">Welcome to my bio 👋 Thanks for support</div>
+
+      <div class="links">
+        <a href="https://www.youtube.com/@nasrililham56" target="_blank">
+          <i class="fab fa-youtube"></i>YouTube
+        </a>
+
+        <a href="https://www.tiktok.com/@nsril.56" target="_blank">
+          <i class="fab fa-tiktok"></i>TikTok
+        </a>
+
+        <a href="https://www.instagram.com/ns_rl06/" target="_blank">
+          <i class="fab fa-instagram"></i>Instagram
+        </a>
+
+        <a href="https://discord.gg/BGNYyyteG" target="_blank">
+          <i class="fab fa-discord"></i>Discord
+        </a>
+
+        <a href="https://saweria.co/LoliBeatzNsrl" target="_blank">
+          <i class="fas fa-hand-holding-dollar"></i>Saweria
+        </a>
+      </div>
+
+      <footer>© 2026</footer>
+    </div>
+  </div>
+</body>
+</html>
